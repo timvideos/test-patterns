@@ -21,6 +21,7 @@ class WaitTillFinished(object):
         self.finished = False
     
         self.pipe = pipe
+        self.pipe.bus.add_signal_watch()
         self.pipe.bus.connect("message::eos", self.on_eos)
         self.pipe.bus.connect("message::error", self.on_error)
 
@@ -56,7 +57,6 @@ while True:
             width=1280,
             height=720,
         ))
-    pipe.bus.add_signal_watch()
     finished = False
 
     WaitTillFinished(pipe).run()
