@@ -10,3 +10,10 @@ gstreamer).
 
 `dynamic` includes scripts which generate dynamic output (mostly using
 gstreamer).
+
+# Ubuntu
+
+```bash
+apt-get install python3-scipy python3-pil
+apt-get install apt-get install gstreamer1.0-plugins-* gstreamer-tools
+```
