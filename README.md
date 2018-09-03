@@ -14,6 +14,7 @@ gstreamer).
 # Ubuntu
 
 ```bash
-apt-get install python3-scipy python3-pil
-apt-get install apt-get install gstreamer1.0-plugins-* gstreamer-tools
+sudo apt-get install python3-scipy python3-pil gstreamer1.0-plugins-*
 ```
+
+make_all.sh will install and run the statics, leave you with all the images.
